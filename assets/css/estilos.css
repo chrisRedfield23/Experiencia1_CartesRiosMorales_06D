@@ -37,6 +37,83 @@ header{
     background-attachment: fixed;
     position: relative;
 }
+/*Menu*/
+nav {
+
+    background-color: #ffffff;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+}
+
+nav ul {
+    float: left;
+}
+
+nav ul li {
+
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav h3 {
+    padding: 1rem 2rem;
+    float: left;
+    align-self: center;
+}
+
+nav ul li a {
+
+    display: block;
+    padding: 0 2rem;
+    line-height: 5rem;
+    color:#0a0a0a;
+    text-decoration: none;
+
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li:hover ul a{
+    display: block;
+}
+
+nav ul li ul li{
+    width:100%;
+    
+}
+
+nav ul li ul li a {
+    padding: 1rem 2rem;
+    line-height: unset;
+    white-space: nowrap;
+}
+
+
+nav ul li ul li a:hover {
+    background-color: #efefef;
+
+}
+
+.menu li a:hover {
+    background-color: coral;
+}
+
+.proyect {
+    text-align: center;
+}
+/*----------------------*/
 nav{
     text-align: right;
     pad: 30px 50px 0 0;
@@ -210,77 +287,119 @@ header .textos-header{
 
 }
 
-/*Foot*/
+/* footer */
 
-nav {
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
 
-    background-color: #ffffff;
-    width: 100%;
-    height: 5rem;
+.row {
+
     display: flex;
+    flex-wrap: wrap;
 }
-
-nav ul {
-    float: left;
-}
-
-nav ul li {
-
-    float: left;
+ul {
     list-style: none;
+}
+.footer {
+    background-color: #478f08;
+    padding: 20px 0;
+
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+
+
+}
+
+
+.footer-cool h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
     position: relative;
+    background-color: rgb(255, 94, 94);
 }
 
-nav h3 {
-    padding: 1rem 2rem;
-    float: left;
-    align-self: center;
-}
-
-nav ul li a {
-
-    display: block;
-    padding: 0 2rem;
-    line-height: 5rem;
-    color:#0a0a0a;
-    text-decoration: none;
-
-}
-
-nav ul li ul {
-    display: none;
+.footer-cool h4::before{
+    content: '';
     position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #7b9fff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+
+.footer-col ul li:not(last-child){
+    margin-bottom: 10px;
+    
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color:#ffffff;
+    padding-left: 8px;
+
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 500%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color:#24262b;
     background-color: #ffffff;
-    border: 1px solid #cccccc;
-
+    text-align: center;
 }
 
-nav ul li:hover ul {
-    display: block;
+
+/*responsive*/
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
 }
 
-nav ul li:hover ul a{
-    display: block;
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
 }
 
-nav ul li ul li{
-    width:100%;
-
-}
-
-nav ul li ul li a {
-    padding: 1rem 2rem;
-    line-height: unset;
-    white-space: nowrap;
-}
-
-nav ul li ul li a:hover {
-    background-color: #efefef;
-
-}
-
-.menu li a:hover {
-    background-color: coral;
+.titular-final{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+    color:#ffffff;
 }
 
 /* ligthbox*/
